@@ -1,5 +1,3 @@
-// import 'dart:js';
-
 import 'package:flutter/cupertino.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:pay_flow/shared/auth/auth_controller.dart';

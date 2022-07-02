@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pay_flow/modules/home/home_controller.dart';
-import 'package:pay_flow/shared/auth/auth_controller.dart';
-import 'package:pay_flow/shared/models/user_model.dart';
 import 'package:pay_flow/shared/themes/app_text_styles.dart';
 import 'package:pay_flow/shared/themes/appcolors.dart';
 
@@ -22,9 +20,6 @@ class _HomePageState extends State<HomePage> {
       color: Colors.blue,
     )
   ];
-
-  // final authController = AuthController();
-  // final usermodels = UserModel(name: authController.currentUser(context).toString())
 
   @override
   Widget build(BuildContext context) {

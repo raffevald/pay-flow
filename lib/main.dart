@@ -1,8 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:pay_flow/app_widger.dart';
-// import 'package:pay_flow/modules/login/login_page.dart';
-// import 'package:pay_flow/shared/themes/appcolors.dart';
 
 void main() {
   runApp(AppFirebase());

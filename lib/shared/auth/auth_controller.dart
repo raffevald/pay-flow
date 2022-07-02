@@ -1,12 +1,6 @@
-// import 'dart:convert';
-
-// ignore_for_file: use_build_context_synchronously
-
 import 'package:flutter/material.dart';
 import 'package:pay_flow/shared/models/user_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-// import 'package:pay_flow/modules/home/home_page.dart';
-// import 'package:pay_flow/modules/login/login_page.dart';
 
 class AuthController {
   // var _isAuthenticated = false;
