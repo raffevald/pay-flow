@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:pay_flow/app_widger.dart';
 import 'package:pay_flow/modules/login/login_page.dart';
 import 'package:pay_flow/shared/themes/appcolors.dart';
 
@@ -21,7 +22,26 @@ class _AppFirebaseState extends State<AppFirebase> {
   Widget build(BuildContext context) {
     return FutureBuilder(
       future: _initialization,
-    
+      builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          return const Material(
+            child: Center(
+              child: Text(
+                "Não foi inicializar o Firebase",
+                textDirection: TextDirection.ltr,
+              ),
+            ),
+          );
+        } else if (snapshot.connectionState == ConnectionState.done) {
+          return const AppWidget();
+        } else {
+          return const Material(
+            child: Center(
+              child: CircularProgressIndicator(),
+            ),
+          );
+        }
+      },
     );
   }
 }
