@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
+// import 'package:google_sign_in/google_sign_in.dart';
 import 'package:pay_flow/modules/login/login_controller.dart';
 import 'package:pay_flow/shared/themes/app_images.dart';
 import 'package:pay_flow/shared/themes/app_text_styles.dart';
@@ -67,7 +67,7 @@ class _LoginPageState extends State<LoginPage> {
                         const EdgeInsets.only(top: 40, left: 40, right: 40),
                     child: SocialLoginButton(
                       onTap: () {
-                        controller.googleSignIn();
+                        controller.googleSignIn(context);
                       },
                     ),
                   ),
