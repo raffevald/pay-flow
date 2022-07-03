@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pay_flow/app_widger.dart';
 
 void main() {
-  runApp(AppFirebase());
+  runApp(const AppFirebase());
 }
 
 class AppFirebase extends StatefulWidget {
@@ -31,7 +31,7 @@ class _AppFirebaseState extends State<AppFirebase> {
             ),
           );
         } else if (snapshot.connectionState == ConnectionState.done) {
-          return const AppWidget();
+          return AppWidget();
         } else {
           return const Material(
             child: Center(
