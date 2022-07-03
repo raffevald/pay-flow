@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:pay_flow/modules/home/home_controller.dart';
+// import 'package:pay_flow/shared/models/user_model.dart';
 import 'package:pay_flow/shared/themes/app_text_styles.dart';
 import 'package:pay_flow/shared/themes/appcolors.dart';
 
 class HomePage extends StatefulWidget {
+  // final UserModel user;
+  // const HomePage({Key? key, required this.user}) : super(key: key);
   const HomePage({Key? key}) : super(key: key);
 
   @override
@@ -12,6 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final homeConroller = HomeController();
+
   final pages = [
     Container(
       color: Colors.red,
@@ -38,6 +42,7 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     TextSpan(
                       text: "Rafael",
+                      // text: widget.user.name,
                       style: TextStyles.titleBoldBackground,
                     ),
                   ],
@@ -76,7 +81,7 @@ class _HomePageState extends State<HomePage> {
             ),
             GestureDetector(
               onTap: () {
-                print("Clicou");
+                Navigator.pushNamed(context, "barcodeScanner");
               },
               child: Container(
                 width: 56,
