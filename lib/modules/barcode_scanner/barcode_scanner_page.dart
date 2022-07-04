@@ -3,7 +3,7 @@ import 'package:pay_flow/shared/themes/app_text_styles.dart';
 // import 'package:pay_flow/shared/widget/dividar_vertical/dividar_vertical_widget.dart';
 import 'package:pay_flow/shared/widget/set_label_buttons/set_label_buttons.dart';
 
-import '../../shared/widget/bttom_sheet/bottom_sheet_widget.dart';
+// import '../../shared/widget/bttom_sheet/bottom_sheet_widget.dart';
 // import 'package:pay_flow/shared/themes/appcolors.dart';
 // import '../../shared/widget/label_button/label_button.dart';
 
@@ -17,14 +17,14 @@ class BarcadodeScannerPage extends StatefulWidget {
 class _BarcadodeScannerPageState extends State<BarcadodeScannerPage> {
   @override
   Widget build(BuildContext context) {
-    return BottomSheetWidget(
-      title: "Não foi possivel identificar um código de barras",
-      subtitle: "Tente escanear novamente ou digite o código do seu boleto.",
-      primaryLabel: "Escanear novamente",
-      primaryOnPressed: () {},
-      secondaryLabel: "Digitar novamente",
-      secondaryOnPressed: () {},
-    );
+    // return BottomSheetWidget(
+    //   title: "Não foi possivel identificar um código de barras",
+    //   subtitle: "Tente escanear novamente ou digite o código do seu boleto.",
+    //   primaryLabel: "Escanear novamente",
+    //   primaryOnPressed: () {},
+    //   secondaryLabel: "Digitar novamente",
+    //   secondaryOnPressed: () {},
+    // );
     return SafeArea(
       top: true,
       bottom: true,
