@@ -1,4 +1,4 @@
-# pay_flow
+# PayFlow
 
 A new Flutter project.
 
