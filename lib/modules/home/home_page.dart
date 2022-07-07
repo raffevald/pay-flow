@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:pay_flow/modules/home/home_controller.dart';
-import 'package:pay_flow/shared/models/boleto_model.dart';
+import 'package:pay_flow/modules/meus_boletos/meus_boletos_page.dart';
+// import 'package:pay_flow/shared/models/boleto_model.dart';
 // import 'package:pay_flow/shared/models/user_model.dart';
 import 'package:pay_flow/shared/themes/app_text_styles.dart';
 import 'package:pay_flow/shared/themes/appcolors.dart';
 import 'package:pay_flow/shared/widget/boleto_list/boleto_list_widget.dart';
-import 'package:pay_flow/shared/widget/boleto_tile/boleto_tile_widget.dart';
+// import 'package:pay_flow/shared/widget/boleto_tile/boleto_tile_widget.dart';
 
 class HomePage extends StatefulWidget {
   // final UserModel user;
@@ -21,7 +22,8 @@ class _HomePageState extends State<HomePage> {
 
   final pages = [
     Container(
-      child: BoletoListWidget(),
+      // child: BoletoListWidget(),
+      child: MeusBoletosPage(),
     ),
     Container(
       color: Colors.blue,
