@@ -1,19 +1,12 @@
-import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
 import 'package:pay_flow/modules/extract/extract_page.dart';
 import 'package:pay_flow/modules/home/home_controller.dart';
 import 'package:pay_flow/modules/meus_boletos/meus_boletos_page.dart';
 import 'package:pay_flow/shared/models/user_model.dart';
-// import 'package:pay_flow/shared/models/boleto_model.dart';
-// import 'package:pay_flow/shared/models/user_model.dart';
 import 'package:pay_flow/shared/themes/app_text_styles.dart';
 import 'package:pay_flow/shared/themes/appcolors.dart';
-// import 'package:pay_flow/shared/widget/boleto_list/boleto_list_widget.dart';
-// import 'package:pay_flow/shared/widget/boleto_tile/boleto_tile_widget.dart';
 
 class HomePage extends StatefulWidget {
-  // final UserModel user;
-  // const HomePage({Key? key, required this.user}) : super(key: key);
   final UserModel user;
   const HomePage({Key? key, required this.user}) : super(key: key);
 
@@ -24,9 +17,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final homeConroller = HomeController();
 
+  @override
   final pages = [
     Container(
       // child: BoletoListWidget(),
+      // reatvidaide();
       child: MeusBoletosPage(),
     ),
     Container(
@@ -94,7 +89,6 @@ class _HomePageState extends State<HomePage> {
             ),
             GestureDetector(
               onTap: () {
-                // Navigator.pushNamed(context, "/barcode_scanner");
                 Navigator.pushNamed(context, "/insertBoletos");
               },
               child: Container(

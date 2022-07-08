@@ -1,5 +1,3 @@
-// import 'dart:ffi';
-
 import 'package:flutter/cupertino.dart';
 import 'package:pay_flow/shared/models/boleto_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
 import 'package:pay_flow/modules/insert_boleto/insert_boleto_controller.dart';
-// import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pay_flow/shared/themes/app_text_styles.dart';
 import 'package:pay_flow/shared/themes/appcolors.dart';
 import 'package:pay_flow/shared/widget/input_text/input_text_widget.dart';
@@ -25,14 +24,6 @@ class _InserirBoletosPageState extends State<InserirBoletosPage> {
       MoneyMaskedTextController(leftSymbol: "R\$", decimalSeparator: ",");
   final dueDateInputTextcontroller = MaskedTextController(mask: "00/00/0000");
   final barcodeInputTextController = TextEditingController();
-
-  @override
-  void initState() {
-    if (widget.barcode != null) {
-      barcodeInputTextController.text = widget.barcode!;
-    }
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -120,7 +111,7 @@ class _InserirBoletosPageState extends State<InserirBoletosPage> {
         secondaryLabel: "Cadastrar",
         secondaryOnPressed: () async {
           await controller.cadastrarBoletos();
-          Navigator.pop(context);
+          Navigator.pop((context));
         },
         enableSecondaryColor: true,
       ),

@@ -1,10 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../shared/models/boleto_model.dart';
 import '../../shared/themes/app_text_styles.dart';
 import '../../shared/themes/appcolors.dart';
-import '../../shared/widget/boleto_info/boleto_info_widget.dart';
 import '../../shared/widget/boleto_list/boleto_list_controller.dart';
 import '../../shared/widget/boleto_list/boleto_list_widget.dart';
 

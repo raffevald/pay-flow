@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-
 import '../../models/boleto_model.dart';
 import '../boleto_tile/boleto_tile_widget.dart';
 import 'boleto_list_controller.dart';
-// import 'package:payflow/shared/models/boleto_model.dart';
-// import 'package:payflow/shared/widgets/boleto_list/boleto_list_controller.dart';
-// import 'package:payflow/shared/widgets/boleto_tile/boleto_tile_widget.dart';
 
 class BoletoListWidget extends StatefulWidget {
   final BoletoListController controller;

@@ -1,9 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:pay_flow/shared/themes/app_images.dart';
 import 'package:pay_flow/shared/themes/appcolors.dart';
-
 import '../../themes/app_text_styles.dart';
 
 class BoletoInofWidget extends StatelessWidget {

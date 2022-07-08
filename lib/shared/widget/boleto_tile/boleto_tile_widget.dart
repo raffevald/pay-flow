@@ -1,7 +1,6 @@
 import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
 import 'package:pay_flow/shared/models/boleto_model.dart';
-
 import '../../themes/app_text_styles.dart';
 
 class BoletoTileWidget extends StatelessWidget {
