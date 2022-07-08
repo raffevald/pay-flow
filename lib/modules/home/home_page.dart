@@ -17,17 +17,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final homeConroller = HomeController();
 
-  @override
-  final pages = [
-    Container(
-      // child: BoletoListWidget(),
-      // reatvidaide();
-      child: MeusBoletosPage(),
-    ),
-    Container(
-      child: ExtractPage(),
-    )
-  ];
+  final pages = [const MeusBoletosPage(), const ExtractPage()];
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +36,6 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     TextSpan(
                       text: widget.user.name,
-                      // text: widget.user.name,
                       style: TextStyles.titleBoldBackground,
                     ),
                   ],
@@ -70,6 +59,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: pages[homeConroller.currentPage],
+      // ignore: sized_box_for_whitespace
       bottomNavigationBar: Container(
         height: 90,
         child: Row(

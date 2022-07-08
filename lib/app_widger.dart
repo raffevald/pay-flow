@@ -28,13 +28,13 @@ class AppWidget extends StatelessWidget {
       // home: LoginPage(),
       initialRoute: "/splash",
       routes: {
-        "/splash": ((context) => SplashPage()),
+        "/splash": ((context) => const SplashPage()),
         "/home": ((context) => HomePage(
               user: ModalRoute.of(context)!.settings.arguments as UserModel,
             )),
         "/login": ((context) => LoginPage()),
         // "/barcode_scanner": (context) => BarcodeScannerPage(),
-        "/insertBoletos": ((context) => InserirBoletosPage()),
+        "/insertBoletos": ((context) => const InserirBoletosPage()),
       },
     );
   }

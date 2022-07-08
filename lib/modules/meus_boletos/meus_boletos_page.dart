@@ -17,6 +17,12 @@ class MeusBoletosPage extends StatefulWidget {
 class _MeusBoletosPageState extends State<MeusBoletosPage> {
   final controller = BoletoListController();
 
+  // @override
+  // initState() {
+  //   setState(() {});
+  //   super.initState();
+  // }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

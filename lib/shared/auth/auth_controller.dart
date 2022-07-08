@@ -31,9 +31,11 @@ class AuthController {
     await Future.delayed(const Duration(seconds: 2));
     if (instance.containsKey("user")) {
       final json = instance.get("user") as String;
+      // ignore: use_build_context_synchronously
       setUser(context, UserModel.fromJson(json));
       return;
     } else {
+      // ignore: use_build_context_synchronously
       setUser(context, null);
     }
   }

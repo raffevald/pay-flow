@@ -30,7 +30,7 @@ class BoletoTileWidget extends StatelessWidget {
             style: TextStyles.trailingRegular,
             children: [
               TextSpan(
-                text: "${data.value!.toStringAsFixed(2)}",
+                text: data.value!.toStringAsFixed(2),
                 style: TextStyles.trailingBold,
               ),
             ],

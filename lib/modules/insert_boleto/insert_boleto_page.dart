@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
 import 'package:pay_flow/modules/insert_boleto/insert_boleto_controller.dart';
+import 'package:pay_flow/modules/meus_boletos/meus_boletos_page.dart';
+import 'package:pay_flow/shared/auth/auth_controller.dart';
+import 'package:pay_flow/shared/models/user_model.dart';
 import 'package:pay_flow/shared/themes/app_text_styles.dart';
 import 'package:pay_flow/shared/themes/appcolors.dart';
 import 'package:pay_flow/shared/widget/input_text/input_text_widget.dart';
@@ -19,6 +22,7 @@ class InserirBoletosPage extends StatefulWidget {
 
 class _InserirBoletosPageState extends State<InserirBoletosPage> {
   final controller = InsertBoletoController();
+  final authController = AuthController();
 
   final moneyInputTextController =
       MoneyMaskedTextController(leftSymbol: "R\$", decimalSeparator: ",");
@@ -111,7 +115,10 @@ class _InserirBoletosPageState extends State<InserirBoletosPage> {
         secondaryLabel: "Cadastrar",
         secondaryOnPressed: () async {
           await controller.cadastrarBoletos();
-          Navigator.pop((context));
+          // print(authController.currentUser(context));
+          // Navigator.pushReplacementNamed(context, "/home",
+          //     arguments: authController.currentUser(context) as UserModel);
+          // Navigator.pop((context));
         },
         enableSecondaryColor: true,
       ),
